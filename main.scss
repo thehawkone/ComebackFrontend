@@ -1,0 +1,117 @@
+$bg-color: #ffffff;
+$second-bg-color: #EDF7FA;
+$text-color: #21243D;
+$header-button-color: #000000;
+$year-text-color: #142850;
+$year-right-text-color: #8695A4;
+$view-all-button-color: #00A8CC;
+$download-button-color: #FF6464;
+$line-color: #E0E0E0;
+$font-base: 'Heebo', sans-serif;
+
+@font-face {
+  font-family: 'Heebo';
+  src: url('/fonts/Heebo-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Heebo';
+  src: url('/fonts/Heebo-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Heebo';
+  src: url('/fonts/Heebo-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Heebo';
+  src: url('/fonts/Heebo-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Heebo';
+  src: url('/fonts/Heebo-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Heebo';
+  src: url('/fonts/Heebo-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Heebo';
+  src: url('/fonts/Heebo-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@mixin title-font {
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 136%;
+  color: $text-color;
+}
+@mixin second-title-font {
+  font-weight: 700;
+  font-size: 26px;
+  color: $text-color;
+}
+@mixin third-title-font {
+  font-weight: 700;
+  font-size: 30px;
+  color: $text-color;
+}
+@mixin description-font {
+  font-weight: 400;
+  font-size: 16px;
+  color: $text-color;
+}
+@mixin red-button {
+  border-radius: 2px;
+  width: 208px;
+  height: 47px;
+  background: $download-button-color;
+}
+@mixin year-button {
+  border-radius: 16px;
+  width: 62px;
+  height: 25px;
+}
+@mixin year-right-text-color {
+  font-weight: 400;
+  font-size: 20px;
+  color: $year-right-text-color;
+}
+@mixin view-all-button-color {
+  font-weight: 400;
+  font-size: 16px;
+  text-align: right;
+  color: $view-all-button-color;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  color: $text-color;
+}
+.wrapper {
+  max-width: 1152px;
+  margin: 0 auto;
+}
