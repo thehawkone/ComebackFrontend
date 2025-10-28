@@ -87,9 +87,14 @@ $font-base: 'Heebo', sans-serif;
   color: $text-color;
 }
 @mixin red-button {
+  font-weight: 500;
+  font-size: 20px;
+  color: #fff;
   border-radius: 2px;
   width: 208px;
   height: 47px;
+  border: none;
+  outline: none;
   background: $download-button-color;
 }
 @mixin year-button {
@@ -124,16 +129,56 @@ $font-base: 'Heebo', sans-serif;
 body {
   font-family: $font-base;
 }
+.header {
+  padding-top: 15px;
+  padding-right: 60px;
+  @include header-font;
+  position: relative;
+  z-index: 2;
 
+  &__content {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
 
+  &__menu {
+    &-list {
+      display: flex;
+      gap: 33px;
+    }
+  }
+}
 
+.hero {
+  border: 1px solid red;
+  margin-top: 140px;
+  position: relative;
 
-
-
-
-
-
-
-
-
-
+  &__content {
+    border: 1px solid red;
+    margin-bottom: 71px;
+    display: flex;
+    padding-left: 148px;
+  }
+  &__information {
+    display: flex;
+    flex-direction: column;
+  }
+  &__title {
+    @include title-font;
+    border: 1px solid red;
+    padding-top: 18px;
+    margin-bottom: 40px;
+  }
+  &__description {
+    @include description-font;
+  }
+  &__red-button {
+    @include red-button;
+    margin-top: 38px;
+  }
+  &__image {
+    padding-left: 106px;
+  }
+}

@@ -1,0 +1,133 @@
+@font-face {
+  font-family: "Heebo";
+  src: url("/fonts/Heebo-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Heebo";
+  src: url("/fonts/Heebo-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Heebo";
+  src: url("/fonts/Heebo-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Heebo";
+  src: url("/fonts/Heebo-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Heebo";
+  src: url("/fonts/Heebo-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Heebo";
+  src: url("/fonts/Heebo-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Heebo";
+  src: url("/fonts/Heebo-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  color: #21243D;
+}
+
+.wrapper {
+  max-width: 1152px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "Heebo", sans-serif;
+}
+
+.header {
+  padding-top: 15px;
+  padding-right: 60px;
+  font-weight: 500;
+  font-size: 20px;
+  text-align: right;
+  color: #000000;
+  position: relative;
+  z-index: 2;
+}
+.header__content {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.header__menu-list {
+  display: flex;
+  gap: 33px;
+}
+
+.hero {
+  border: 1px solid red;
+  margin-top: 140px;
+  position: relative;
+}
+.hero__content {
+  border: 1px solid red;
+  margin-bottom: 71px;
+  display: flex;
+  padding-left: 148px;
+}
+.hero__information {
+  display: flex;
+  flex-direction: column;
+}
+.hero__title {
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 136%;
+  color: #21243D;
+  border: 1px solid red;
+  padding-top: 18px;
+  margin-bottom: 40px;
+}
+.hero__description {
+  font-weight: 400;
+  font-size: 16px;
+  color: #21243D;
+}
+.hero__red-button {
+  font-weight: 500;
+  font-size: 20px;
+  color: #fff;
+  border-radius: 2px;
+  width: 208px;
+  height: 47px;
+  border: none;
+  outline: none;
+  background: #FF6464;
+  margin-top: 38px;
+}
+.hero__image {
+  padding-left: 106px;
+}
+
+/*# sourceMappingURL=main.css.map */
