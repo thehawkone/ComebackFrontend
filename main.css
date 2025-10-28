@@ -189,4 +189,72 @@ body {
   padding-top: 23px;
 }
 
+.featured {
+  background-color: #ffffff;
+  border: 1px solid red;
+  position: relative;
+  height: 868px;
+}
+.featured__content {
+  padding-left: 148px;
+  border: 1px solid red;
+}
+.featured__main-title {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 273%;
+  color: #21243D;
+  padding-top: 15px;
+  padding-bottom: 22px;
+}
+.featured__works {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+}
+.featured__work {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid red;
+}
+.featured__info {
+  padding-left: 18px;
+}
+.featured__title {
+  font-weight: 700;
+  font-size: 30px;
+  color: #21243D;
+}
+.featured__second-info {
+  display: flex;
+  flex-direction: row;
+  padding-top: 12px;
+  padding-bottom: 17px;
+}
+.featured__year {
+  border-radius: 16px;
+  width: 62px;
+  height: 25px;
+  background: #142850;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 333%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2px;
+}
+.featured__type {
+  font-weight: 400;
+  font-size: 20px;
+  color: #8695A4;
+  padding-left: 26px;
+}
+.featured__line {
+  border-top: 1px solid #e0e0e0;
+  margin-top: 15px;
+  padding-bottom: 44px;
+}
+
 /*# sourceMappingURL=main.css.map */

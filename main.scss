@@ -75,6 +75,12 @@ $font-base: 'Heebo', sans-serif;
   font-size: 30px;
   color: $text-color;
 }
+@mixin four-title-font {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 273%;
+  color: $text-color;
+}
 @mixin header-font {
   font-weight: 500;
   font-size: 20px;
@@ -107,6 +113,15 @@ $font-base: 'Heebo', sans-serif;
   border-radius: 16px;
   width: 62px;
   height: 25px;
+  background: #142850;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 333%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2px;
 }
 @mixin year-right-text-color {
   font-weight: 400;
@@ -238,5 +253,56 @@ body {
   }
   &__description {
     padding-top: 23px;
+  }
+}
+
+.featured {
+  background-color: $bg-color;
+  border: 1px solid red;
+  position: relative;
+  height: 868px;
+
+  &__content {
+    padding-left: 148px;
+    border: 1px solid red;
+  }
+  &__main-title {
+    @include four-title-font;
+    padding-top: 15px;
+    padding-bottom: 22px;
+  }
+  &__works {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+  }
+  &__work {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid red;
+  }
+  &__info {
+    padding-left: 18px;
+  }
+  &__title {
+    @include third-title-font;
+  }
+  &__second-info {
+    display: flex;
+    flex-direction: row;
+    padding-top: 12px;
+    padding-bottom: 17px;
+  }
+  &__year {
+    @include year-button;
+  }
+  &__type {
+    @include year-right-text-color;
+    padding-left: 26px;
+  }
+  &__line {
+    border-top: 1px solid #e0e0e0;
+    margin-top: 15px;
+    padding-bottom: 44px;
   }
 }
